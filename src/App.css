@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: #7f5a83;
+    background-image: linear-gradient(90deg, #7f5a83 0%, #0d324d 74%);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    background-color: #fffdf6;
+    background-image: linear-gradient(315deg, #fffdf6 0%, #fddac5 74%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin: 2rem;
+    text-transform: uppercase;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto;
+    padding: 2.5rem;
+    background-color: #fffdf6;
+    border-radius: 1rem;
 }
-
-.App-link {
-  color: #61dafb;
+label {
+    margin-bottom: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    width: 60%;
+    border: none;
+    padding: 0 0.5ch;
+    border-bottom: 1px solid #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+input:focus {
+    border-bottom: 2px solid #555;
+}
+textarea {
+    border-radius: 10px;
+    width: 70%;
+    resize: none;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 1rem;
+    padding: 4px;
+    height: 200px;
+}
+button {
+    all: unset;
+    width: fit-content;
+    margin-top: 1rem;
+    background-color:#4267B2;
+    color: #fffdf6;
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    text-transform: uppercase;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+button:hover {
+    background-color:#2f62c8;
 }
