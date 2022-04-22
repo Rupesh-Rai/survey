@@ -15,6 +15,8 @@ app.use(express.urlencoded({
   extended: true
 }))
 
+//sahik
+
 //route to get data from database
 app.get('/', (req, res) => {
   Survey.findAll().then(survey => {
